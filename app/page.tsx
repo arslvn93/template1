@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Instagram, Facebook, Twitter } from "lucide-react"
+import { Instagram, Facebook, LinkedinIcon as LinkedIn } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 
@@ -12,8 +12,8 @@ export default function Home() {
         <div className="container mx-auto flex justify-between items-center">
           <div className="text-sm font-light tracking-widest uppercase">
             <Link href="/" className="text-white">
-              <h1 className="text-xl md:text-2xl font-normal tracking-wide font-serif">Morgan Kendall</h1>
-              <p className="text-xs tracking-[0.3em]">MARKETING CONSULTANT</p>
+              <h1 className="text-xl md:text-2xl font-normal tracking-wide font-serif">Sarah Johnson</h1>
+              <p className="text-xs tracking-[0.3em]">LUXURY REAL ESTATE EXPERT</p>
             </Link>
           </div>
           <nav className="hidden md:flex space-x-8 text-xs uppercase tracking-wider">
@@ -24,10 +24,13 @@ export default function Home() {
               About
             </Link>
             <Link href="#" className="hover:text-gray-300">
-              Services
+              Market Insights
             </Link>
             <Link href="#" className="hover:text-gray-300">
-              Blog
+              Buyer's Guide
+            </Link>
+            <Link href="#" className="hover:text-gray-300">
+              Seller's Guide
             </Link>
             <Link href="#" className="hover:text-gray-300">
               Contact
@@ -44,7 +47,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/60 z-10">
           <Image
             src="/placeholder.svg?height=1080&width=1920"
-            alt="Woman in elegant white blouse"
+            alt="Sarah Johnson, Luxury Real Estate Expert"
             fill
             priority
             className="object-cover mix-blend-overlay"
@@ -53,113 +56,106 @@ export default function Home() {
         <div className="container mx-auto px-4 relative z-20">
           <div className="max-w-3xl mx-auto text-center text-white">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-light tracking-wide leading-tight">
-              LET&apos;S CREATE MAGIC
-              <br />& GROW YOUR
+              YOUR TRUSTED GUIDE
               <br />
-              BUSINESS
+              IN LUXURY
+              <br />
+              REAL ESTATE
             </h1>
             <p className="mt-6 text-sm md:text-base font-light tracking-wider max-w-md mx-auto">
-              Strategic marketing solutions to help you connect with your audience and grow your brand authentically.
+              Expertise, integrity, and personalized service for discerning clients in the luxury property market.
             </p>
             <div className="mt-12 space-y-4">
               <Button className="bg-white text-black hover:bg-white/90 rounded-none px-8 py-6 text-xs tracking-widest uppercase">
-                Discover Services
+                Schedule a Consultation
               </Button>
               <Button
                 variant="outline"
                 className="border-white text-white hover:bg-white/10 rounded-none px-8 py-6 text-xs tracking-widest uppercase"
               >
-                Get a Free Training
+                Download Market Report
               </Button>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Categories Bar */}
+      {/* Expertise Bar */}
       <section className="py-6 bg-[#af9f94]/30 border-t border-b border-black/20">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-12">
-            <Link href="#" className="text-center font-light text-sm md:text-base">
-              SOCIAL MEDIA
-            </Link>
+            <span className="text-center font-light text-sm md:text-base">MARKET ANALYSIS</span>
             <div className="hidden md:block h-6 w-px bg-black/70"></div>
-            <Link href="#" className="text-center font-light text-sm md:text-base">
-              COPYWRITING
-            </Link>
+            <span className="text-center font-light text-sm md:text-base">NEGOTIATION</span>
             <div className="hidden md:block h-6 w-px bg-black/70"></div>
-            <Link href="#" className="text-center font-light text-sm md:text-base">
-              STRATEGY
-            </Link>
+            <span className="text-center font-light text-sm md:text-base">PROPERTY VALUATION</span>
             <div className="hidden md:block h-6 w-px bg-black/70"></div>
-            <Link href="#" className="text-center font-light text-sm md:text-base">
-              MARKETING
-            </Link>
+            <span className="text-center font-light text-sm md:text-base">INVESTMENT STRATEGY</span>
           </div>
         </div>
       </section>
 
-      {/* My Story Section */}
+      {/* About Sarah Section */}
       <section className="py-16 bg-[#f5f3ef]">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12">
             <div className="bg-black">
               <Image
                 src="/placeholder.svg?height=800&width=600"
-                alt="Marketing consultant portrait"
+                alt="Sarah Johnson, Luxury Real Estate Expert"
                 width={600}
                 height={800}
                 className="w-full h-full object-cover mix-blend-normal"
               />
             </div>
             <div className="flex flex-col justify-center">
-              <p className="uppercase tracking-widest text-sm mb-4">THIS IS MY STORY</p>
-              <h2 className="text-3xl md:text-4xl font-serif mb-6">How I Started My Marketing Journey</h2>
+              <p className="uppercase tracking-widest text-sm mb-4">MEET SARAH JOHNSON</p>
+              <h2 className="text-3xl md:text-4xl font-serif mb-6">Your Trusted Advisor in Luxury Real Estate</h2>
               <p className="text-sm leading-relaxed mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore duis 17% magna.
+                With over 15 years of experience in the luxury real estate market, I've built a reputation for providing
+                exceptional service and expert guidance to discerning clients.
               </p>
               <p className="text-sm leading-relaxed mb-8">
-                Et tortor consequat id porta nibh. Et tortor at risus viverra adipiscing at in tellus integer. Ornare
-                suspendisse sed nisi lacus sed viverra tellus in. Etiam dignissim diam quis enim lobortis fermentum dui
-                faucibus. Adipiscing elit duis sollicitudin nibh sit. Hendrerit gravida rutrum.
+                My approach combines in-depth market knowledge, strategic negotiation skills, and a commitment to
+                understanding each client's unique needs. Whether you're looking to buy, sell, or invest in luxury
+                properties, I'm here to ensure your success in the competitive real estate landscape.
               </p>
               <Button variant="outline" className="rounded-none text-xs tracking-widest uppercase px-6 self-start">
-                ABOUT MEGAN
+                LEARN MORE ABOUT SARAH
               </Button>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Story Section */}
+      {/* Current Market Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12">
             <div className="flex flex-col justify-center">
-              <p className="uppercase tracking-widest text-sm mb-4">HERE&apos;S THE SECRET:</p>
+              <p className="uppercase tracking-widest text-sm mb-4">MARKET INSIGHTS</p>
               <h2 className="text-3xl md:text-4xl font-serif mb-6">
-                If you&apos;re struggling with marketing...
+                Understanding Today's
                 <br />
-                You probably need a better <span className="italic">story.</span>
+                <span className="italic">Luxury Real Estate Market</span>
               </h2>
               <p className="text-sm leading-relaxed mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. In tellus integer scelerisque varius.
+                The luxury real estate market is constantly evolving, influenced by economic trends, lifestyle changes,
+                and global events. Stay informed with our latest market analysis and insights.
               </p>
               <p className="text-sm leading-relaxed mb-8">
-                Congue eu consequat ac felis donec et odio. Quis vel eros donec ac odio tempor orci dapibus. Amet mattis
-                vulputate enim nulla aliquet porttitor lacus. Sollicitudin nibh sit amet commodo. Pulvinar neque laoreet
-                suspendisse.
+                From emerging neighborhood hotspots to the impact of remote work on high-end properties, our
+                comprehensive market report covers everything you need to know to make informed decisions in today's
+                luxury real estate landscape.
               </p>
               <Button variant="outline" className="rounded-none text-xs tracking-widest uppercase px-6 self-start">
-                READ MORE
+                DOWNLOAD MARKET REPORT
               </Button>
             </div>
             <div>
               <Image
                 src="/placeholder.svg?height=800&width=600"
-                alt="Marketing strategy visual"
+                alt="Luxury real estate market graph"
                 width={600}
                 height={800}
                 className="w-full h-full object-cover"
@@ -169,145 +165,39 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Copy Section */}
+      {/* Buyer's Guide Section */}
       <section className="py-16 bg-[#f5f3ef]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-serif text-center mb-12">Does your copy sound boring?</h2>
+            <h2 className="text-3xl md:text-4xl font-serif text-center mb-12">Luxury Home Buyer's Guide</h2>
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div className="flex flex-col items-center">
+                <h3 className="text-xl font-serif mb-4">Define Your Vision</h3>
                 <p className="text-sm leading-relaxed mb-4">
-                  Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor incidi et dolore magna aliqua. In
-                  tellus integer scelerisque varius?
+                  Clarify your must-haves, desired locations, and lifestyle needs to focus your luxury home search
+                  effectively.
                 </p>
                 <div className="w-20 h-px bg-black/70 my-4"></div>
               </div>
               <div className="flex flex-col items-center">
+                <h3 className="text-xl font-serif mb-4">Financial Preparation</h3>
                 <p className="text-sm leading-relaxed mb-4">
-                  Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor incidi et ornare sed magna aliqua?
-                  In tellus integer scelerisque varius.
+                  Understand financing options, tax implications, and investment potential in the luxury market.
                 </p>
                 <div className="w-20 h-px bg-black/70 my-4"></div>
               </div>
               <div className="flex flex-col items-center">
+                <h3 className="text-xl font-serif mb-4">Due Diligence</h3>
                 <p className="text-sm leading-relaxed mb-4">
-                  Quis varius quam quisque id diam vel. Habitant morbi tristique senectus et? Scelerisque fermentum in
-                  ornare?
+                  Learn about property inspections, title searches, and other critical steps in the luxury buying
+                  process.
                 </p>
                 <div className="w-20 h-px bg-black/70 my-4"></div>
               </div>
             </div>
             <div className="text-center mt-8">
               <Button variant="outline" className="rounded-none text-xs tracking-widest uppercase px-6">
-                EXPLORE SERVICES
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-center text-2xl font-serif mb-12">What we&apos;re most proud of:</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
-              <p className="text-3xl md:text-4xl font-serif mb-2">380+</p>
-              <p className="text-xs uppercase tracking-widest text-gray-600">Happy clients</p>
-            </div>
-            <div>
-              <p className="text-3xl md:text-4xl font-serif mb-2">12</p>
-              <p className="text-xs uppercase tracking-widest text-gray-600">Years experience</p>
-            </div>
-            <div>
-              <p className="text-3xl md:text-4xl font-serif mb-2">95%</p>
-              <p className="text-xs uppercase tracking-widest text-gray-600">Retention rate</p>
-            </div>
-            <div>
-              <p className="text-3xl md:text-4xl font-serif mb-2">3</p>
-              <p className="text-xs uppercase tracking-widest text-gray-600">Team members</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Masterclass Section */}
-      <section className="py-16 bg-black text-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-4">
-            <p className="text-xs uppercase tracking-widest">
-              Ready to position yourself as an expert in your industry?
-            </p>
-          </div>
-          <h2 className="text-center text-3xl md:text-4xl font-serif mb-8">
-            Nurture Your Followers
-            <br />
-            <span className="italic">Masterclass</span>
-          </h2>
-          <div className="max-w-xl mx-auto text-center mb-8">
-            <p className="text-sm">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia!
-            </p>
-          </div>
-          <div className="text-center">
-            <Button className="bg-white text-black hover:bg-white/90 rounded-none px-8 py-6 text-xs tracking-widest uppercase">
-              WATCH INSTANTLY!
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Services Grid */}
-      <section className="py-16 bg-[#f5f3ef]">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-center mb-12">
-            <div className="h-px bg-black/70 w-1/4"></div>
-            <h2 className="text-center text-xl font-light mx-6 uppercase tracking-widest">EXPLORE OUR PROGRAMS</h2>
-            <div className="h-px bg-black/70 w-1/4"></div>
-          </div>
-          <h2 className="text-center text-3xl md:text-4xl font-serif mb-12">WHAT FEELS RIGHT FOR YOU?</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="flex flex-col">
-              <div className="bg-black h-80 mb-4">
-                <Image
-                  src="/placeholder.svg?height=600&width=400"
-                  alt="Service one"
-                  width={400}
-                  height={600}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <Button variant="outline" className="rounded-none text-xs tracking-widest uppercase px-6 mt-auto">
-                SERVICE ONE
-              </Button>
-            </div>
-            <div className="flex flex-col">
-              <div className="bg-black h-80 mb-4">
-                <Image
-                  src="/placeholder.svg?height=600&width=400"
-                  alt="Service two"
-                  width={400}
-                  height={600}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <Button variant="outline" className="rounded-none text-xs tracking-widest uppercase px-6 mt-auto">
-                SERVICE TWO
-              </Button>
-            </div>
-            <div className="flex flex-col">
-              <div className="bg-black h-80 mb-4">
-                <Image
-                  src="/placeholder.svg?height=600&width=400"
-                  alt="Free training"
-                  width={400}
-                  height={600}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <Button variant="outline" className="rounded-none text-xs tracking-widest uppercase px-6 mt-auto">
-                FREE TRAINING
+                GET FULL BUYER'S GUIDE
               </Button>
             </div>
           </div>
@@ -318,49 +208,49 @@ export default function Home() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <p className="text-xs uppercase tracking-widest text-gray-600 mb-6">#happyclients</p>
+            <p className="text-xs uppercase tracking-widest text-gray-600 mb-6">CLIENT TESTIMONIALS</p>
             <blockquote className="text-xl md:text-2xl font-serif italic mb-6">
-              "Now I feel excited about social media!"
+              "Sarah's expertise and dedication made our home buying experience truly exceptional."
             </blockquote>
             <p className="text-sm text-gray-600 mb-6">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Nunc sed velit dignissim sodales!
+              Working with Sarah was an absolute pleasure. Her in-depth knowledge of the luxury market, attention to
+              detail, and unwavering commitment to our needs made the entire process smooth and enjoyable. We couldn't
+              be happier with our new home and the investment guidance Sarah provided.
             </p>
-            <p className="text-sm font-medium italic">— Amy Jacobs</p>
+            <p className="text-sm font-medium italic">— The Andersons, Malibu</p>
           </div>
         </div>
       </section>
 
-      {/* Freebie Section */}
-      <section className="py-16 bg-[#f5f3ef]" id="freebie">
+      {/* Contact Section */}
+      <section className="py-16 bg-[#f5f3ef]" id="contact">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <Image
                 src="/placeholder.svg?height=800&width=600"
-                alt="Freebie mockup"
+                alt="Sarah Johnson consulting with clients"
                 width={600}
                 height={800}
                 className="w-full h-auto"
               />
             </div>
             <div>
-              <h2 className="text-2xl md:text-3xl font-serif mb-6">
-                Want to create a genuine connection with your audience?
-              </h2>
+              <h2 className="text-2xl md:text-3xl font-serif mb-6">Let's Discuss Your Real Estate Goals</h2>
               <p className="text-lg md:text-xl font-serif mb-6">
-                Learn how to write better <span className="italic">stories</span> and make scroll-stopping visuals with
-                our <span className="italic">60 minute live training!</span>
+                Whether you're looking to <span className="italic">buy, sell, or invest</span> in luxury properties, I'm
+                here to provide expert guidance tailored to your needs.
               </p>
               <p className="text-sm text-gray-600 mb-8">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eiusmod tempor incididunt ut labore et dolore,
-                magna aliqua. Faucibus ornare suspendisse sed nisi. Platea dictumst vestibulum rhoncus. Elementum
-                curabitur vitae 60 velit sodales!
+                Schedule a consultation today and take the first step towards achieving your real estate aspirations.
+                I'll provide personalized advice and exclusive insights into the luxury market.
               </p>
               <div className="space-y-4">
-                <Input type="email" placeholder="Email address" className="rounded-none focus:ring-black" />
+                <Input type="text" placeholder="Your Name" className="rounded-none focus:ring-black" />
+                <Input type="email" placeholder="Your Email" className="rounded-none focus:ring-black" />
+                <Input type="tel" placeholder="Your Phone" className="rounded-none focus:ring-black" />
                 <Button className="w-full bg-black text-white hover:bg-black/90 rounded-none px-8 py-6 text-xs tracking-widest uppercase">
-                  GET INSTANT ACCESS
+                  SCHEDULE CONSULTATION
                 </Button>
               </div>
             </div>
@@ -374,13 +264,15 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-12">
             <div>
               <div className="bg-white text-black p-6 mb-8">
-                <h3 className="text-xl font-serif mb-1">Morgan Kendall</h3>
-                <p className="text-xs uppercase tracking-widest">MARKETING CONSULTANT</p>
+                <h3 className="text-xl font-serif mb-1">Sarah Johnson</h3>
+                <p className="text-xs uppercase tracking-widest">LUXURY REAL ESTATE EXPERT</p>
               </div>
-              <p className="text-sm text-gray-300 mb-4">SUPERCHARGE YOUR MARKETING STRATEGY AND GROW YOUR BUSINESS</p>
+              <p className="text-sm text-gray-300 mb-4">
+                Providing expert guidance and personalized service in the luxury real estate market.
+              </p>
             </div>
             <div>
-              <h3 className="text-sm uppercase tracking-widest mb-6">Navigation</h3>
+              <h3 className="text-sm uppercase tracking-widest mb-6">Quick Links</h3>
               <div className="grid grid-cols-2 gap-4">
                 <Link href="#" className="text-gray-300 hover:text-white">
                   Home
@@ -389,13 +281,13 @@ export default function Home() {
                   About
                 </Link>
                 <Link href="#" className="text-gray-300 hover:text-white">
-                  Services
+                  Market Insights
                 </Link>
                 <Link href="#" className="text-gray-300 hover:text-white">
-                  Blog
+                  Buyer's Guide
                 </Link>
                 <Link href="#" className="text-gray-300 hover:text-white">
-                  Freebies
+                  Seller's Guide
                 </Link>
                 <Link href="#" className="text-gray-300 hover:text-white">
                   Contact
@@ -403,14 +295,14 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <h3 className="text-sm uppercase tracking-widest mb-6">JOIN THE TRIBE!</h3>
+              <h3 className="text-sm uppercase tracking-widest mb-6">Stay Informed</h3>
               <p className="text-sm text-gray-300 mb-4">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse dolore!
+                Subscribe to our newsletter for exclusive market insights and luxury real estate tips.
               </p>
               <div className="flex mb-4">
                 <Input
                   type="email"
-                  placeholder="Email address"
+                  placeholder="Your Email"
                   className="bg-transparent border-white/30 rounded-none focus:border-white"
                 />
                 <Button className="bg-white text-black hover:bg-white/90 rounded-none ml-2">Subscribe</Button>
@@ -423,24 +315,14 @@ export default function Home() {
                   <Facebook size={18} />
                 </Link>
                 <Link href="#" className="text-white hover:text-gray-300">
-                  <Twitter size={18} />
+                  <LinkedIn size={18} />
                 </Link>
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-4 md:grid-cols-8 gap-2 mt-12">
-            {[...Array(8)].map((_, i) => (
-              <Image
-                key={i}
-                src={`/placeholder.svg?height=150&width=150`}
-                alt={`Gallery image ${i + 1}`}
-                width={150}
-                height={150}
-                className="object-cover w-full h-auto"
-              />
-            ))}
+          <div className="text-center mt-12 text-xs text-gray-400">
+            © SARAH JOHNSON LUXURY REAL ESTATE 2023. ALL RIGHTS RESERVED.
           </div>
-          <div className="text-center mt-12 text-xs text-gray-400">© DESIGNORINA 2023. ALL RIGHTS RESERVED.</div>
         </div>
       </footer>
     </div>
