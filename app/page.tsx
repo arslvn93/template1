@@ -24,7 +24,7 @@ export default function Home() {
               About
             </Link>
             <Link href="#" className="hover:text-gray-300">
-              Toronto Market
+              Toronto Condos
             </Link>
             <Link href="#" className="hover:text-gray-300">
               Buyer's Guide
@@ -63,7 +63,7 @@ export default function Home() {
               EXPERT
             </h1>
             <p className="mt-6 text-sm md:text-base font-light tracking-wider max-w-md mx-auto">
-              10 years of specialized expertise in Toronto's dynamic condo market, helping clients make informed decisions since 2013.
+              A decade of expertise in Toronto's dynamic condo market, helping clients make informed decisions since 2015.
             </p>
             <div className="mt-12 space-y-4">
               <Button className="bg-white text-black hover:bg-white/90 rounded-none px-8 py-6 text-xs tracking-widest uppercase">
@@ -73,7 +73,7 @@ export default function Home() {
                 variant="outline"
                 className="border-white text-white hover:bg-white/10 rounded-none px-8 py-6 text-xs tracking-widest uppercase"
               >
-                Download Toronto Condo Report
+                March 2025 Condo Report
               </Button>
             </div>
           </div>
@@ -84,13 +84,13 @@ export default function Home() {
       <section className="py-6 bg-[#af9f94]/30 border-t border-b border-black/20">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-12">
-            <span className="text-center font-light text-sm md:text-base">CONDO MARKET ANALYSIS</span>
+            <span className="text-center font-light text-sm md:text-base">CONDO MARKET EXPERTISE</span>
+            <div className="hidden md:block h-6 w-px bg-black/70"></div>
+            <span className="text-center font-light text-sm md:text-base">PRE-CONSTRUCTION</span>
             <div className="hidden md:block h-6 w-px bg-black/70"></div>
             <span className="text-center font-light text-sm md:text-base">INVESTMENT PROPERTIES</span>
             <div className="hidden md:block h-6 w-px bg-black/70"></div>
             <span className="text-center font-light text-sm md:text-base">FIRST-TIME BUYERS</span>
-            <div className="hidden md:block h-6 w-px bg-black/70"></div>
-            <span className="text-center font-light text-sm md:text-base">PRE-CONSTRUCTION EXPERTISE</span>
           </div>
         </div>
       </section>
@@ -110,15 +110,18 @@ export default function Home() {
             </div>
             <div className="flex flex-col justify-center">
               <p className="uppercase tracking-widest text-sm mb-4">MEET ARSLAN AHMED</p>
-              <h2 className="text-3xl md:text-4xl font-serif mb-6">Your Toronto Condo Market Expert</h2>
+              <h2 className="text-3xl md:text-4xl font-serif mb-6">Toronto's Condo Market Authority</h2>
               <p className="text-sm leading-relaxed mb-4">
-                With a decade of dedicated experience in Toronto's competitive condo market, I've helped hundreds of clients find their perfect urban home or investment property.
+                With 10 years of specialized experience in Toronto's competitive condo market, I've helped hundreds of clients
+                find their perfect home or investment property in the city.
               </p>
               <p className="text-sm leading-relaxed mb-8">
-                My approach combines hyperlocal knowledge of Toronto's diverse neighborhoods, data-driven market analysis, and a genuine commitment to understanding each client's unique needs. Whether you're a first-time buyer, an investor, or looking to sell your condo, I bring specialized expertise to every transaction.
+                My approach combines deep neighborhood knowledge, pricing expertise, and a genuine commitment to understanding
+                each client's unique goals. From Liberty Village to Yorkville, and from first-time buyers to seasoned investors,
+                I provide the insights you need to succeed in Toronto's fast-paced condo market.
               </p>
               <Button variant="outline" className="rounded-none text-xs tracking-widest uppercase px-6 self-start">
-                MORE ABOUT ARSLAN
+                LEARN MORE ABOUT ARSLAN
               </Button>
             </div>
           </div>
@@ -130,20 +133,20 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12">
             <div className="flex flex-col justify-center">
-              <p className="uppercase tracking-widest text-sm mb-4">TORONTO CONDO MARKET</p>
+              <p className="uppercase tracking-widest text-sm mb-4">MARKET INSIGHTS</p>
               <h2 className="text-3xl md:text-4xl font-serif mb-6">
-                Navigating Today's
+                Toronto Condo Market:
                 <br />
-                <span className="italic">Toronto Condo Landscape</span>
+                <span className="italic">March 2025 Update</span>
               </h2>
               <p className="text-sm leading-relaxed mb-4">
-                Toronto's condo market continues to evolve, shaped by urban development, interest rates, and changing lifestyle preferences. Stay informed with our quarterly market insights.
+                Toronto's condo market continues to evolve, with new developments, changing buyer preferences, and shifting investment opportunities. Stay informed with our latest analysis of market trends and neighborhood insights.
               </p>
               <p className="text-sm leading-relaxed mb-8">
-                From emerging neighborhoods and pre-construction opportunities to resale value trends, our comprehensive Toronto Condo Report provides the data and analysis you need to make confident decisions in today's dynamic market.
+                From Downtown to North York, our comprehensive market report covers pricing trends, inventory levels, and projections for the coming months to help you make strategic decisions in Toronto's competitive condo market.
               </p>
               <Button variant="outline" className="rounded-none text-xs tracking-widest uppercase px-6 self-start">
-                DOWNLOAD Q2 2023 CONDO REPORT
+                DOWNLOAD MARCH 2025 REPORT
               </Button>
             </div>
             <div>
@@ -152,5 +155,4 @@ export default function Home() {
                 alt="Toronto condo market graph"
                 width={600}
                 height={800}
-                className="w-full h-full object-cover"
-              />
+                className
