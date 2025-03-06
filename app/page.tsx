@@ -46,7 +46,7 @@ export default function Home() {
       <section className="relative h-[80vh] flex items-center">
         <div className="absolute inset-0 bg-black/60 z-10">
           <Image
-            src="/placeholder.svg?height=1080&width=1920"
+            src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop"
             alt="Emma Pace, Award-Winning Luxury Homes Broker in The Beaches, Toronto"
             fill
             priority
@@ -100,7 +100,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12">
             <div className="bg-black">
               <Image
-                src="/placeholder.svg?height=800&width=600"
+                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=988&auto=format&fit=crop"
                 alt="Emma Pace, Award-Winning Luxury Homes Broker"
                 width={600}
                 height={800}
@@ -151,7 +151,7 @@ export default function Home() {
             </div>
             <div>
               <Image
-                src="/placeholder.svg?height=800&width=600"
+                src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1973&auto=format&fit=crop"
                 alt="Toronto luxury home market graph"
                 width={600}
                 height={800}
@@ -209,7 +209,7 @@ export default function Home() {
             </blockquote>
             <p className="text-sm text-gray-600 mb-6">
               Working with Emma was a game changer. Her expertise in The Beaches market, attention to detail, and award-winning
-              approach ensured we found our dream home with confidence. We couldn’t be more satisfied.
+              approach ensured we found our dream home with confidence. We couldn't be more satisfied.
             </p>
             <p className="text-sm font-medium italic">— The Martins, Toronto</p>
           </div>
@@ -222,7 +222,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=800&width=600"
+                src="https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?q=80&w=1973&auto=format&fit=crop"
                 alt="Emma Pace consulting with clients"
                 width={600}
                 height={800}
